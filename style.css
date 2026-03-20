@@ -12,6 +12,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid black 1px;
+    z-index: 1;
 }
 
 .navbar-s1_title{
@@ -35,6 +36,25 @@ body{
 
 .navbar-s2 input:focus{
     outline:none;
+}
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning_popup{
+    position:absolute;
+    background-color: white;
+    border: solid black 2px;
+    top:30px;
+    padding:5px;
+    display:none;
+}
+
+.mylearning:hover .mylearning_popup{
+    display:block;
+    z-index: 2;
 }
 
 .navbar-s3 {
@@ -63,6 +83,32 @@ body{
 .sales img{
     width:100%
 }
+
+.sales {
+    position: relative;
+}
+
+.flashsale {
+    
+}
+
+.pysalesphoto {
+    height:200px;
+}
+
+.sales_offer{
+    position: absolute;
+    border: solid black 2px;
+    background-color: white;
+    padding: 10px;
+    width:400px;
+    height: fit-content;
+    top:20px;
+    left:20px;
+    bottom: 200px;
+}
+
+
 
 .recommended {
     padding:20px;
