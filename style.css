@@ -63,6 +63,8 @@ body{
     align-items: center;
 }
 
+
+
 .section2 {
     display:flex;
     flex-wrap: wrap;
@@ -77,11 +79,20 @@ body{
     padding:10px;
     color:white;
     border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
     
 }
 
+.section2 p:hover{
+    transition: 0.5s;
+    transform: translatey(-5px);
+    background-color:rgb(125, 24, 125);
+
+}
+
 .sales img{
-    width:100%
+    width:100%;
 }
 
 .sales {
@@ -106,9 +117,23 @@ body{
     top:20px;
     left:20px;
     bottom: 200px;
+    animation-name:zoom;
+    animation-duration: 1.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
 
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 .recommended {
     padding:20px;
